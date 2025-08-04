@@ -4,7 +4,7 @@ resource "aws_security_group" "worker_node_management" {
   vpc_id      = module.vpc.vpc_id   
 }
 
-resource "security_group_rule" "worker_node_management_ingress" {
+resource "aws_security_group_rule" "worker_node_management_ingress" {
     description = "Allow traffic to eks"
     type       = "ingress"
     from_port  = 0
@@ -17,7 +17,7 @@ resource "security_group_rule" "worker_node_management_ingress" {
       "192.168.0.0/16"
     ]
 }
-resource "security_group_rule" "worker_node_management_egress" {
+resource "aws_security_group_rule" "worker_node_management_egress" {
     description = "Allow all outbound traffic from eks"
     type        = "egress"
     from_port   = 0
