@@ -24,7 +24,7 @@ variable "cluster_name" {
 }   
 variable "cluster_version" {
     description = "The version of the EKS cluster."
-    default = "1.21"
+    default = "1.28"
 }
 variable "aws_region" {
     description = "The AWS region where the EKS cluster will be deployed."
