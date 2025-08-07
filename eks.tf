@@ -17,8 +17,8 @@ module "eks" {
             ami_type        = "AL2_x86_64"
             instance_type   = "t3.medium"
             vpc_security_group_ids = [aws_security_group.worker_node_management.id]
-            desired_capacity = 2
-            max_capacity     = 3
+            desired_capacity = 1
+            max_capacity     = 2
             min_capacity     = 1
         }
     }
