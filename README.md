@@ -29,7 +29,6 @@ Ideal for bootstrapping production-ready Kubernetes clusters on AWS.
 ├── modules/              # Reusable modules (EKS cluster, VPC, node groups)
 │   ├── eks/
 │   └── vpc/
-├── examples/             # Sample usage scenarios
 └── README.md             # This documentation file
 ```
 
